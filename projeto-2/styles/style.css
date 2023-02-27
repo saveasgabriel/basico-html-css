@@ -3,11 +3,15 @@
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
+    --font-principal: 'Inter', sans-serif;
 }
 
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
+    font-family: var(--font-principal);
+    font-size: 1rem;
+    font-weight: 25rem;
 }
 
 * {
@@ -23,7 +27,7 @@ body {
 
 .container {
     height: 100vh;
-    display: contents;
+    display: grid;
     grid-template-columns: 50% 50%;
 }
 
@@ -33,4 +37,21 @@ body {
     padding: 1em;
     color: var(--branco-principal);
     display: block;
+    text-decoration: none;
+}
+
+.botao__secundario {
+    background-color: transparent;
+    border: 0.125rem solid var(--branco-principal);
+    
+}
+
+.container__aviso {
+    font-size: 0.75rem;
+    color: var(--cinza-secundario);
+}
+
+.container__titulo {
+    font-size: 1.75rem;
+    font-weight: 700;
 }
